@@ -4,11 +4,11 @@ import { Router } from "express"
 
 
 export const conect = mysql.createPool({
-    host: "qa-instance-1.cbzrm1rfcw7j.us-east-1.rds.amazonaws.com",
-    user: "techtest",
-    port: 3306,
-    password: "zf4SE4WBXq",
-    database: "technical_test",
+    host: "",
+    user: "",
+    port: "",
+    password: "",
+    database: "",
 })
 
 
@@ -20,6 +20,5 @@ router.get("/", async (req, res) => {
     console.log(rows)
     res.json(rows)
 })
-
 
 export default router
